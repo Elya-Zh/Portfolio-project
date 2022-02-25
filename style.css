@@ -135,18 +135,21 @@
  }
  .section-d {
      height: 800px;
-     width: 100%;
+     width: 90%;
      text-align: center;
-     margin: 40px;
+     margin: auto;
+     margin-top: 20px;
  }
  /* .section-d h3 {
     padding-top: 60px;
  } */
  .cards {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 45% 45%;
     grid-template-rows: 300px 300px;
     color: white;
+    margin-left: 35px;
+    
  }
  .section-d h3{
      color: #ECB807;
@@ -156,26 +159,79 @@
     font-size: 48px;
     margin: 0px 0px 48px;
 }
+.cards .content-card{
+    width: 250px;
+    height: 50%;
+    text-align: left;
+   }
+
  .card-a {
      background-image: url(https://images.unsplash.com/photo-1510070112810-d4e9a46d9e91?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDR8fHxlbnwwfHx8fA%3D%3D&w=1000&q=80);
      background-size: cover;
      background-position: center;
-     
+     background-repeat: no-repeat;
+     display: flex;  
+     align-items: flex-end;
+     justify-content: center;
+     z-index: 1;
+}
+    
+
+ .card-a:hover{
+    transition: all 0.3s ease-in;
+    transform-style: preserve-3d;
+    transform: scale(0.9);
+    opacity: 0.7;
+    z-index:1;
  }
+  
  .card-b {
      background-image: url(https://heartytools.github.io/img/portfolio-2.jpg);
      background-size: cover;
      background-position: center;
+     background-repeat: no-repeat;
+     display: flex;  
+     align-items: flex-end;
+     justify-content: center;
+ }
+ .card-b:hover{
+    transition: all 0.3s ease-in;
+    transform-style: preserve-3d;
+    transform: scale(0.9);
+    opacity: 0.7;
+    z-index:1;
  }
  .card-c {
-    background-image: url(https://images.pexels.com/photos/196658/pexels-photo-196658.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500);
+    background-image: url(https://learn.seytech.co/assets/projects/html-css/projects/2-portfolio/img/portfolio-3.jpg);
     background-size: cover;
      background-position: center;
+     background-repeat: no-repeat;
+     display: flex;  
+     align-items: flex-end;
+     justify-content: center;
+ }
+ .card-c:hover{
+    transition: all 0.3s ease-in;
+    transform-style: preserve-3d;
+    transform: scale(0.9);
+    opacity: 0.7;
+    z-index:1;
  }
  .card-d {
-    background-image: url(https://images.pexels.com/photos/7511847/pexels-photo-7511847.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500);
+    background-image: url(	https://learn.seytech.co/assets/projects/html-css/projects/2-portfolio/img/portfolio-4.jpg);
     background-size: cover;
      background-position: center;
+     background-repeat: no-repeat;
+     display: flex;  
+     align-items: flex-end;
+     justify-content: center;
+ }
+ .card-d:hover{
+    transition: all 0.3s ease-in;
+    transform-style: preserve-3d;
+    transform: scale(0.9);
+    opacity: 0.7;
+    z-index:1;
  }
  .section-e {
     background-color: rgb(28, 128, 159);
