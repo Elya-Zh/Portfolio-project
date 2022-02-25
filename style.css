@@ -139,15 +139,23 @@
      text-align: center;
      margin: 40px;
  }
- .section-d h3 {
+ /* .section-d h3 {
     padding-top: 60px;
- }
+ } */
  .cards {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 300px 300px;
     color: white;
  }
+ .section-d h3{
+     color: #ECB807;
+     font-size: 16px;
+ }
+.section-d .project {
+    font-size: 48px;
+    margin: 0px 0px 48px;
+}
  .card-a {
      background-image: url(https://images.unsplash.com/photo-1510070112810-d4e9a46d9e91?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDR8fHxlbnwwfHx8fA%3D%3D&w=1000&q=80);
      background-size: cover;
