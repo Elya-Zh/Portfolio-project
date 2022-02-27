@@ -9,11 +9,19 @@
      background-size: cover;
      background-repeat: no-repeat;
      height: 500px;
-     font-weight:bolder;
-     font-size: 30px;
      text-align: center;
      position: relative;
-     
+ }
+ header h1 {
+     font-size: 60px;
+     font-weight: 700;
+ }
+ header h2 {
+    font-size: 25px;
+    font-weight: bold;
+ }
+ header div {
+     margin-top: 120px;
  }
  a {
      text-decoration: none;
@@ -33,7 +41,7 @@
  .header-btn {
      background-color: #1d809f;
      font-weight: bold;
-     
+     margin-top: 30px;
  }
  
  header i {
@@ -47,15 +55,19 @@
      color: white;
      border-radius: 5px;
  }
- 
- header i:hover{
-   background-color: black;  
- }
- 
+ header i:hover {
+    background-color: black;
+    opacity: 0.6;
+}
  #section-a {
      text-align: center;
-     height: 500px;
+     height: 300px;
      font-size: 25px;
+     margin: 100px 0 50px 0;
+ }
+ #section-a p {
+     font-size: 1.25rem;
+     font-weight: 200;
  }
  span {
      color: #1d809f;
@@ -63,13 +75,13 @@
  .section-a-btn {
      background-color: black;
      font-weight: bold;
+     margin-top: 40px;
  }
  
  .section-a a {
      color: white;
      
  }
- 
  #section-b h1 {
  text-align: center;
  font-weight:900px;
@@ -94,20 +106,26 @@
      display: flex;
      color: white;
      justify-content: space-around;
+    
+
  
  }
  li {
      text-align: center;
+
  
- }.li-icons{
+ }
+ .li-icons{
     background-color: #fff;
     color:rgb(28, 128, 159) ;
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height: 100px;
     border-radius: 50%;
     font-size: 50px;
     /* padding: 30px 20px ; */
     text-align: center;
+    justify-self: center;
+   
     
  
  }
@@ -116,7 +134,61 @@
     font-size: 50px;
     
  }
- .section-c {
+       /* new added code,please check*/
+.wrapper{
+    width: 100%;
+    margin: auto;
+    background-color:#1D809F ;
+    height:400px ;
+    padding-top: 30px;
+    
+    }
+    .content{
+      display: flex;
+      justify-content:space-between;
+      margin:20px 0px 0px 20px;
+      padding-top: 20px;
+       /* flex-wrap: wrap; */
+     }
+    #head{
+      text-align: center;
+    }
+    svg{
+      width: 70px;
+      height: 70px;
+      border: 1px solid grey;
+      border-radius: 50%;
+      color:#1D809F ;
+      padding: 20px;
+      background-color:white ;
+      margin-left: 20px;
+    }
+    .wrapper h3{
+      font-size: 16px;
+      color:#ECB807 ;
+      text-transform: uppercase;
+    }
+    .wrapper h1{
+      font-size: 48px;
+      color: white;
+      margin-top: 10px;
+      font-weight: bold;
+    }
+    .wrapper h2{
+      font-size: 24px;
+      color: white;
+      margin-top: 10px;
+      font-weight: bolder;
+    }
+    .wrapper p{
+      font-size: 13px;
+      color: white;
+      margin-top: 10px;
+      opacity: 0.5;
+    }
+    /* this is the end of code*/
+
+.section-c {
      background-image: url(https://images.unsplash.com/photo-1510070009289-b5bc34383727?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fHllbGxvdyUyMHBlbmNpbHxlbnwwfHwwfHw%3D&w=1000&q=80);
      text-align: center;
      height: 400px;
@@ -253,15 +325,22 @@
  }
  .white:hover {
      background-color: rgb(223, 217, 217);
+     cursor: pointer;
  }
  .dark:hover {
      background-color: black;
+     cursor: pointer;
+ }
+ footer{
+     height: 300px;
  }
  .footer-icons {
     display: flex;
     justify-content: center;
     align-content: center;
     font-size: 30px;
+    margin-top: 100px;
+    
  }
  .footer i {
      border: 1px solid rgb(28, 128, 159);
@@ -269,4 +348,69 @@
      /* width: 50px;
      height: 50px; */
      padding: 30px;
+     color: white;
+     background-color: rgb(28, 128, 159);
+     margin: 10px;
+}
+.footer i:hover {
+    background-color: rgb(21, 75, 92);
+    cursor: pointer;
+}
+footer p{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-top: 20px;
+    color: rgb(133, 129, 129);
+}
+.angle {
+    position: relative;
+}
+.angle i {
+    position: absolute;
+     position: fixed;
+     right: 20px;
+     bottom: 20px;
+     background-color: rgb(63, 60, 60);
+     opacity: 0.4;
+     padding: 25px;
+     color: white;
+     border-radius: 5px;
+}
+.angle i:hover {
+    background-color: black;
+    opacity: 0.6;
+}
+
+@media screen and (max-width:500px) {
+    .wrapper{
+        height:800px;
+    }
+    .content{
+       display:block;
+       width:100%;
+       text-align: center;
+
+    }  
+    .cards {
+        display: grid;
+        grid-template-columns:1fr;
+        grid-template-rows: 200px 200px 200px 200px;
+        color: white;
+        text-align: start;
+      
+     }
+    
+    .cards .content-card{
+        width: 100%;
+        height: 80%;
+        text-align: center;
+       }
+    .media{
+        margin-top: 10px;
+}
+    .section-e{
+       margin-top: 150px;
+}
+    
 }
